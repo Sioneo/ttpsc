@@ -3,20 +3,6 @@
     <head>
         <meta chardet="UTF-8">
         <title>TTPSC</title>
-        <script>
-            function showTime(){
-                var time = new Date();
-                var hour = time.getHours();
-                var minute = time.getMinutes();
-                var second = time.getSecond();
-
-                var display = h + ":" + m + ":" + s;
-                document.getElementById("clock").innerText = display;
-                document.getElementById("vlovk").textContent = display;
-      
-                setTimeout(showTime, 1000);
-            }
-        </script>
     </head>
     <body onload="showTime()">
         <div id="myClock">现在时间</div>
