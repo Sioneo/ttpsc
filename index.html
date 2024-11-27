@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh">
     <head>
+        <meta chardet="UTF-8">
         <title>TTPSC</title>
+        <script>
+            function showTime(){
+                var time = new Date();
+                var hour = time.getHours();
+                var minute = time.getMinutes();
+                var second = time.getSecond();
+
+                var display = h + ":" + m + ":" + s;
+                document.getElementById("clock").innerText = display;
+                document.getElementById("vlovk").textContent = display;
+      
+                setTimeout(showTime, 1000);
+            }
+        </script>
     </head>
-    <body>
+    <body onload="showTime()">
+        <div id="myClock">现在时间</div>
         <h1>欢迎访问西奥小镇插件系统中文站！</h1>
         <h2>主页</h2>
         <a href="website/description.html" target="_self">
