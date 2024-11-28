@@ -1,1 +1,1 @@
-# TheoTown Plugin System in Chinese
+# TheoTown Plugin System Chinese
