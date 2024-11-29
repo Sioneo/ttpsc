@@ -8,7 +8,7 @@
   margin: 5px 7px 5px 7px;
   padding: 2px 5px 2px 5px;
   position: sticky;
-  top: 65px;
+  top: 62px;
 }
 
 .webTitle {
@@ -25,8 +25,8 @@
   background-color: var(--webColor);
   color: #ffffff;
   position: sticky;
-  top: 38px;
-  margin-top: 5px;
+  top: 35px;
+  margin-top: 0px;
   margin-bottom: 5px;
   padding: 0px 0px 0px 10px;
 }
