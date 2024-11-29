@@ -1,0 +1,130 @@
+:root {
+  --webColor: #1580FF;
+}
+
+.webIndex {
+  background-color: #505050;
+  color: #dadada;
+  margin: 5px 7px 5px 7px;
+  padding: 2px 5px 2px 5px;
+  position: sticky;
+  top: 65px;
+}
+
+.webTitle {
+  background-color: var(--webColor);
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  padding: 3px 6px 3px 6px;
+  font-size: 26px;
+}
+
+.pageNow {
+  background-color: var(--webColor);
+  color: #ffffff;
+  position: sticky;
+  top: 38px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px 0px 0px 10px;
+}
+
+.pageTitle {
+  margin-top: 20px;
+  padding: 0px 0px 0px 10px;
+  color: #aaaaaa;
+  font-weight: normal;
+}
+
+.pageSubTitle {
+  margin: 16px 0px 8px 0px;
+  padding: 0px 0px 0px 15px;
+  color: #aaaaaa;
+  font-weight: normal;
+}
+
+
+.pageText{
+  margin: 5px 10px 5px 10px;
+  padding: 0px 35px 0px 20px;
+  color: #d7d7d7;
+  font-weight: normal;
+}
+
+.attentionTitle{
+  background-color: yellow;
+  color: #000000;
+  margin: 5px 35px 0px 20px;
+  padding: 0px 10px 0px 15px;
+  font-weight: bold;
+}
+
+.attention{
+  margin: 0px 35px 5px 20px;
+  padding: 0px 10px 0px 10px;
+  border: 2px solid yellow;
+}
+
+.warningTitle{
+  background-color: red;
+  color: #ffffff;
+  margin: 5px 35px 0px 20px;
+  padding: 0px 10px 0px 15px;
+  font-weight: bold;
+}
+
+.warning{
+  margin: 0px 35px 5px 20px;
+  padding: 0px 10px 0px 10px;
+  border: 2px solid red;
+}
+
+.noteTitle{
+  background-color: #1E90FF;
+  color: #ffffff;
+  margin: 5px 35px 0px 20px;
+  padding: 0px 10px 0px 15px;
+  font-weight: bold;
+}
+
+.note{
+  margin: 0px 35px 5px 20px;
+  padding: 0px 10px 0px 10px;
+  border: 2px solid #1E90FF;
+}
+
+.backButton{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.link{
+  color: #00ff00
+}
+
+.pageIndexLink{
+  margin: 5px 10px 5px 10px;
+  padding: 0px 35px 0px 20px;
+  color: #d7d7d7;
+  font-weight: normal;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #232323;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: underline;
+  color: #dadada;
+  margin-right: 6px;
+}
+
+a:hover{
+  font-weight: bold;
+  color: #ffffff;
+}
