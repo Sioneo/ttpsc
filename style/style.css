@@ -135,6 +135,7 @@
   padding: 2px 10px 2px 10px;
   border: 2px solid #505050;
   font-family: "code", sans-serif;
+  white-space: pre-wrap;
 }
 
 .mono{
