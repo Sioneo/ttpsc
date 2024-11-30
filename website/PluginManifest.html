@@ -24,17 +24,39 @@
   <p class="pageText">
     在1.8.15版本中，西奥小镇加入了插件清单文件（即plugin.manifest），这让外部插件也能在在线模式中使用。<br>
     此文件必须在插件文件夹的根目录（即第一个文件夹）中才能有效，且文件名必须为 <text class="mono">plugin.manifest</text>。<br>
-    如果你想创建新加入的 <text class="mono">.ttplugin</text> 文件的话，插件清单文件也是必须有的。
+    如果你想创建新加入的 <text class="mono">.ttplugin</text> 文件的话，插件清单文件也是必须要有的。
+    插件清单文件还有一个比较重要的作用就是使你的插件能够在外部（本地）插件列表中能够显示。
   </p>
 
   <h3 class="pageSubTitle">例子</h3>
   <p class="pageText">以下是一个最简单、最基础的插件清单文件的例子：<br></p>
   <p class="codeTitle">plugin.manifest</p>
   <p class="code">
-    {<br>&emsp;&emsp;"id": "$example",<br>&emsp;&emsp;"version": 1,<br>&emsp;&emsp;
-    "title": "标题",<br>&emsp;&emsp;"text": "介绍",<br>&emsp;&emsp;"author": "Sioneo",
+    {<br>&emsp;&emsp;"id": "$example",<br>&emsp;&emsp;"version": 1,<br>
+    &emsp;&emsp;"title": "标题",<br>&emsp;&emsp;"text": "介绍",<br>&emsp;&emsp;"author": "Sioneo",
     <br>&emsp;&emsp;"thumbnail": "preview.png"<br>}
   </p>
+
+  <h3 class="pageSubTitle">属性</h3>
+  <p class="pageText">插件清单文件支持以下属性：</p>
+
+  <h4 class="pageText" style="font-weight: bold">Author</h4>
+  <p class="pageText">类型：字符串<br>本插件的作者。</p>
+
+  <h4 class="pageText" style="font-weight: bold">Category</h4>
+  <p class="pageText">类型：布尔值<br>控制插件是否应该出现在外部（本地）插件列表中。</p>
+
+  <h4 class="pageText" style="font-weight: bold">id</h4>
+  <p class="pageText">类型：字符串<br>用于识别插件，所有id都应该是独一无二的。</p>
+
+  <h4 class="pageText" style="font-weight: bold">min version</h4>
+  <p class="pageText">类型：整数<br>插件可以使用的最小版本。</p>
+
+  <h4 class="pageText" style="font-weight: bold">multiplayer</h4>
+  <p class="pageText">类型：布尔值<br>控制插件能否在在线模式使用。</p>
+  <p class="noteTitle">最低版本要求：1.8.33</p>
+  <p class="note">此内容（multiplayer）需要最低1.8.33的游戏版本才能使用。</p>
+  
 
   <p style="text-align: center; background-color: #505050; font-size: 13px;">
     本页于2024/11/30 13:23进行了最后一次更新&emsp;
