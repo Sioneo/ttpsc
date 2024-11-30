@@ -65,7 +65,36 @@
   </p>
 
   <h4 class="pageText" style="font-weight: bold"><br>permanent</h4>
-  <p class="pageText">类型：布尔值<br>控制插件是否算作外部（本地）插件</p>  
+  <p class="pageText">类型：布尔值<br>控制插件是否算作外部（本地）插件。</p> 
+
+  <h4 class="pageText" style="font-weight: bold"><br>platforms</h4>
+  <p class="pageText">类型：字符串、数组<br>
+    控制插件可运行的平台。一般来说，这只应用于Lua或着色器插件，因为常规的插件应与每个平台兼容。<br>
+    在内部，可运行的平台由libgdx提供的<text class="mono">ApplicationType</text>枚举决定。<br>
+    每个平台的值：<text class="mono">android</text>、<text class="mono">ios</text>、<text class="mono">desktop</text><br>
+    <p class="codeTitle">例子：在这个例子中，我们限制插件只能在安卓和桌面端上使用。</p>
+    <p class="code">{<br>&emsp;&emsp;"id": "$example",<br>&emsp;&emsp;"title": "标题",
+      <br>&emsp;&emsp;"platforms": ["android", "desktop"]<br>}
+    </p>
+  </p> 
+  
+  <h4 class="pageText" style="font-weight: bold"><br>text</h4>
+  <p class="pageText">类型：字符串<br>插件的描述。</p> 
+  
+  <h4 class="pageText" style="font-weight: bold"><br>thumbnail</h4>
+  <p class="pageText">类型：字符串<br>插件的预览图。</p> 
+  
+  <h4 class="pageText" style="font-weight: bold"><br>title</h4>
+  <p class="pageText">类型：字符串<br>插件的标题。/p> 
+
+  <h4 class="pageText" style="font-weight: bold"><br>url</h4>
+  <p class="pageText">类型：字符串/布尔值false<br>可以下载到插件的链接，填写false则为不提供。</p> 
+  <p class="noteTitle">最低版本要求：1.8.16</p>
+  <p class="note">此内容（url）需要最低1.8.16的游戏版本才能使用。</p>
+
+  <h4 class="pageText" style="font-weight: bold"><br>version</h4>
+  <p class="pageText">类型：整数<br>插件的版本</p> 
+  
 
   <p style="text-align: center; background-color: #505050; font-size: 13px;">
     本页于2024/11/30 14:01进行了最后一次更新&emsp;
