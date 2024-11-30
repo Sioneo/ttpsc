@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>基础JSON内容 - 西奥小镇插件系统中文站</title>
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+  <h1 class="webTitle">西奥小镇插件系统中文站</h1>
 
+  <h3 class="pageNow">
+     <a href="https://sioneo.github.io/ttpsc/website/compass.html" target="_self" class="backButton">返回索引页</a>  
+  基础JSON内容</h3>
+
+  <p class="webIndex">
+    相关页面：
+    <a href="https://sioneo.github.io/ttpsc/website/compass.html" target="_self">索引页</a>
+    <a href="https://pca.svetikas.lt/docs/attribute-types/base/" target="_blank" rel="noopener noreferrer">官方插件系统原文</a>
+  </p>
+
+  <h2 class="pageTitle">基础JSON内容</h2>
+  <p class="pageText">
+    本页包括了<a href="https://www.json.org/json-zh.html" target="_blank" rel="noopener noreferrer">JSON规范</a>的一些内容。<br>
+  </p>
+  <p class="attentionTitle">注意！</p>
+  <p class="attention">西奥小镇的JSON解析器具有纠错能力，因此她可以将以字符串格式提供的值视为其他类型（例如将字符串格式的「true」视为布尔值）
+    但是，在某些情况下，由于属性接受不同类型的值，这可能会造成歧义。
+    因此，建议不要依赖西奥小镇的JSON解析器始终将字符串类型值视为其他类型，正确输入每一个值。<br>
+    每一种数据类型的正确输入方式：<br>
+    整数/浮点数（即为数字）：直接输入即可（例："level": 1）<br>
+    布尔值（即true和false）：直接输入即可（例："active": true）<br>
+    字符串（即非纯数字、非布尔值）：需用单/双引号括起（例："id": "$example"）
+  </p>
+  <p>西奥小镇的JSON解析器还会在遇到不支持的属性（键）时会将其忽略。</p>
+
+  <h3 class="pageSubTitle">基础JSON类型</h3>
+
+  <h4 class="pageTitle3"><br>布尔值（Boolean）</h4>
+  <p class="pageText">布尔值只有两个值：真（<text class="mono">true</text>）或假（<text class="mono">false</text>），你可以简单地把她们理解为启用/停用。</p>
+  <p class="codeTitle">例子</p>
+  <p class="code">{<br>  "active": true, // 设置启用某一内容。<br>  "draw ground": false // 设置此建筑不绘制地面。<br>}</p>
+
+  <h4 class="pageTitle3"><br>整数（Integer）</h4>
+  <p class="pageText">正如她的名字一样，可以是一个整数。</p>
+  <p class="codeTitle">例子</p>
+  <p class="code">{<br>  "price": 2000 // 设置建筑的价钱为2000。<br>}</p>
+
+  <h4 class="pageTitle3"><br>浮点数（Float）</h4>
+  <p class="pageText">浮点数表示一个小数。</p>
+  <p class="codeTitle">例子</p>
+  <p class="code">{<br>  "pi": 3.1415926<br>}</p>
+
+  <h4 class="pageTitle3"><br>字符串（String）</h4>
+  <p class="pageText">字符串表示一段文本，所有字符串都必须被单/双引号括起。</p>
+  <p class="codeTitle">例子</p>
+  <p class="code">{<br>  "id": "$example",<br>  "author": "Sioneo"<br>}</p>
+  <p class="codeTitle">你可以使用转义字符<text class="mono">\n</text>在字符串中换行</p>
+  <p class="code">{<br>  "text": "Hello World!\nHello TheoTown!"<br>}</p>
+
+  <h4 class="pageTitle3"><br>数组（Array）</h4>
+  <p class="pageText">数组用于为一个属性（键）提供多个值。</p>
+  <p class="codeTitle">例子</p>
+  <p class="code">{<br>  "game": ["TheoTown", "西奥小镇"]<br>}</p>
+
+  <h4 class="pageTitle3"><br>对象（Object）</h4>
+  <p class="pageText">对象用于存储属性。与数组相比，对象包含完整的一个或多个键值对，而数组只包含值。</p>
+  <p class="codeTitle">例子</p>
+  <p class="code">{<br>  "array": ["TheoTown", "西奥小镇"],<br>  "object": {"en": "TheoTown, "zh": "西奥小镇"}<br>}</p>
+  
+  <p style="text-align: center; background-color: #505050; font-size: 13px;">
+    本页于2024/11/30 20:49进行了最后一次更新&emsp;
+    Copyright © 2024 <a href="https://b23.tv/VVKamoK" target="_blank">Sioneo</a>on Bilibili.
+  </p>
+
+</body>
+</html>
