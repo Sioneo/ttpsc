@@ -20,9 +20,9 @@
 
   </p>
 
-  <h2 class="pageTitle">插件清单文件(plugin.manifest)</h2>
+  <h2 class="pageTitle">插件清单文件（plugin.manifest）</h2>
   <p class="pageText">
-    在1.8.15版本中，西奥小镇加入了插件清单文件（即plugin.manifest），这让外部插件也能在在线模式中使用。<br>
+    在1.8.15版本中，西奥小镇加入了插件清单文件（即<text class="mono">plugin.manifest</text>），这让外部插件也能在在线模式中使用。<br>
     此文件必须在插件文件夹的根目录（即第一个文件夹）中才能有效，且文件名必须为 <text class="mono">plugin.manifest</text>。<br>
     如果你想创建新加入的 <text class="mono">.ttplugin</text> 文件的话，插件清单文件也是必须要有的。<br>
     插件清单文件还有一个比较重要的作用就是使你的插件能够在外部（本地）插件列表中能够显示。
@@ -32,9 +32,9 @@
   <p class="pageText">以下是一个最简单、最基础的插件清单文件的例子：<br></p>
   <p class="codeTitle">plugin.manifest</p>
   <p class="code">
-    {<br>&emsp;&emsp;"id": "$example",<br>&emsp;&emsp;"version": 1,<br>
-    &emsp;&emsp;"title": "标题",<br>&emsp;&emsp;"text": "介绍",<br>&emsp;&emsp;"author": "Sioneo",
-    <br>&emsp;&emsp;"thumbnail": "preview.png"<br>}
+    {<br>  "id": "$example",<br>  "version": 1,<br>
+      "title": "标题",<br>  "text": "介绍",<br>  "author": "Sioneo",
+    <br>  "thumbnail": "preview.png"<br>}
   </p>
 
   <h3 class="pageSubTitle">属性</h3>
@@ -73,8 +73,8 @@
     在内部，可运行的平台由libgdx提供的<text class="mono">ApplicationType</text>枚举决定。<br>
     每个平台的值：<text class="mono">android</text>、<text class="mono">ios</text>、<text class="mono">desktop</text><br>
     <p class="codeTitle">例子：在这个例子中，我们限制插件只能在安卓和桌面端上使用。</p>
-    <p class="code">{<br>&emsp;&emsp;"id": "$example",<br>&emsp;&emsp;"title": "标题",
-      <br>&emsp;&emsp;"platforms": ["android", "desktop"]<br>}
+    <p class="code">{<br>  "id": "$example",<br>  "title": "标题",
+      <br>  "platforms": ["android", "desktop"]<br>}
     </p>
   </p> 
   
@@ -97,7 +97,7 @@
   
 
   <p style="text-align: center; background-color: #505050; font-size: 13px;">
-    本页于2024/11/30 14:25进行了最后一次更新&emsp;
+    本页于2024/11/30 14:33进行了最后一次更新&emsp;
     Copyright © 2024 <a href="https://b23.tv/VVKamoK" target="_blank">Sioneo</a>on Bilibili.
   </p>
 
