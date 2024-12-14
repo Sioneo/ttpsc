@@ -175,6 +175,12 @@ a {
   margin-right: 6px;
 }
 
+.hr{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #cacaca
+}
+
 a:hover{
   font-weight: bold;
   color: #ffffff;
