@@ -175,10 +175,9 @@ a {
   margin-right: 6px;
 }
 
-.hr{
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #cacaca
+hr{
+  widht: 90%;
+  color: #cacaca;
 }
 
 a:hover{
