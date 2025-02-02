@@ -3,11 +3,6 @@
   --webTextColor: #000000;
 }
 
-@font-face {
-  font-family: "code";
-  src: url("../fonts/DroidSansMono-1.ttf") format("truetype");
-}
-
 .webIndex {
   background-color: #505050;
   color: #dadada;
@@ -142,12 +137,12 @@
   margin: 0px 35px 5px 20px;
   padding: 2px 10px 2px 10px;
   border: 2px solid #505050;
-  font-family: "code", sans-serif;
+  font-family: monospace, Courier, sans-serif;
   white-space: pre-wrap;
 }
 
 .mono{
-  font-family: "code", sans-serif;
+  font-family: Courier, monospace, sans-serif;
   background-color: #505050;
 }
 
